@@ -1,0 +1,130 @@
+[
+  {
+    "id": "anime-hub",
+    "title": "Anime Hub",
+    "folders": [
+      {
+        "id": "popular-anime",
+        "title": "Popular Anime",
+        "description": "Popular Japanese animated TV series.",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "withOriginCountry": "JP",
+              "voteCountGte": 20
+            }
+          }
+        ]
+      },
+      {
+        "id": "top-rated-anime",
+        "title": "Top Rated Anime",
+        "description": "Highly rated Japanese animated TV series with a minimum vote count.",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "withOriginCountry": "JP",
+              "voteAverageGte": 7,
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "recent-anime",
+        "title": "Recent Anime",
+        "description": "Recently released Japanese animated TV series.",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "withOriginCountry": "JP",
+              "voteCountGte": 5
+            }
+          }
+        ]
+      },
+      {
+        "id": "anime-movies",
+        "title": "Anime Movies",
+        "description": "Japanese animated films, sorted by popularity.",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "withOriginCountry": "JP",
+              "voteCountGte": 10
+            }
+          }
+        ]
+      },
+      {
+        "id": "top-anime-movies",
+        "title": "Top Anime Movies",
+        "description": "Highly rated Japanese animated films.",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "MOVIE",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "withOriginCountry": "JP",
+              "voteAverageGte": 7,
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "anime-sci-fi-fantasy",
+        "title": "Anime Sci-Fi & Fantasy",
+        "description": "Japanese animated TV series tagged as animation and science fiction/fantasy.",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "provider": "tmdb",
+            "tmdbSourceType": "DISCOVER",
+            "mediaType": "TV",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16,10765",
+              "withOriginalLanguage": "ja",
+              "withOriginCountry": "JP",
+              "voteCountGte": 10
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
